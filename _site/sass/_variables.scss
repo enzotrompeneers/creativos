@@ -1,0 +1,107 @@
+// Variables
+// --------------------------
+
+ 
+// Colors and backgrounds
+// --------------------------
+
+$darker:       	      #000000	!default; 
+$color-1:             lighten($darker, 27)  !default; // #444444
+$color-2:             lighten($darker, 55)  !default; // #8b8b8b
+$color-3:             lighten($darker, 97)  !default; // #f7f7f7,#f4f4f4
+$lighter:             lighten($darker, 100) !default; // #FFFFFF
+
+$overlay1: #af1c56 !default;
+$overlay2: #453489 !default;
+$overlay3: #e5b346 !default;
+$overlay4: #1b5e99 !default;
+$overlay5: #81d57c !default;
+$overlay6: #e4c624 !default;
+$overlay7: #e4c725 !default;
+
+$font-col1: #583188 !default;
+$font-col2: #c92062 !default;
+$font-col3: #bc1247 !default;
+$font-col4: #bf2176 !default;
+
+$font-col4: #792c76 !default;
+$font-col5: #ab1955 !default;
+
+$color-a:	#252525  !default;
+$color-mail: #cb306b !default;	  		
+
+$opacitybg-1: rgba(88,49,136,0.5) !default;
+$opacitybg-2: rgba(121,44,118,0.5) !default;
+
+
+
+
+
+//== Typography
+// -------------------------- 
+
+@font-face {
+	font-family:"Lato Black";
+	src:url("../fonts/Lato-Black.eot?") format("eot"),
+	url("../fonts/Lato-Black.woff") format("woff"),
+	url("../fonts/Lato-Black.ttf") format("truetype"),
+	url("../fonts/Lato-Black.svg#Lato-Black") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:"Source Sans Pro Black";
+	src:url("../fonts/SourceSansPro-Black.eot?") format("eot"),
+	url("../fonts/SourceSansPro-Black.woff") format("woff"),
+	url("../fonts/SourceSansPro-Black.ttf") format("truetype"),
+	url("../fonts/SourceSansPro-Black.svg#SourceSansPro-Black") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+    font-family: 'beicon';
+    src:    url('../fonts/beicon.eot?9jjs1x');
+    src:    url('../fonts/beicon.eot?9jjs1x#iefix') format('embedded-opentype'),
+        url('../fonts/beicon.ttf?9jjs1x') format('truetype'),
+        url('../fonts/beicon.woff?9jjs1x') format('woff'),
+        url('../fonts/beicon.svg?9jjs1x#beicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+
+$main-font:  'Lato', sans-serif;
+$main-font-black: "Lato Black";
+$sub-font:'Source Sans Pro', sans-serif;
+$sub-font-black:"Source Sans Pro Black";
+$be-icon:'beicon';
+
+$font-size-base:    14px !default; 
+$font-size-small:ceil(($font-size-base * .857))	!default;   // ~12px
+
+$font-size-h1:			ceil(($font-size-base * 1.571)) 	!default;   // ~22px
+$font-size-h2:			ceil(($font-size-base * 1.428)) 	!default;   // ~20px
+$font-size-h3:			ceil(($font-size-base * 1.285)) 	!default;   // ~18px
+$font-size-h4:			ceil(($font-size-base * 1.2142)) 	!default;   // ~17px
+$font-size-h5:			ceil(($font-size-base * 1.142)) 	!default;   // ~16px
+$font-size-h6:			ceil(($font-size-base * 1.07142)) 	!default;   // ~15px
+
+$banner-title:			ceil(($font-size-base * 2.7859)) 	!default;   // ~39px
+$font-large:			ceil(($font-size-base * 1.714)) 	!default;   // ~24px
+
+$footer-text:			ceil(($font-size-base * 2.14)) 	!default;   // ~30px
+
+$social-icon:			ceil(($font-size-base * 3.428)) 	!default;   // ~48px
+
+
+$font-light:    300   !default;
+$font-normal:   400   !default;
+$font-medium:   500   !default;
+$font-semibold: 600   !default;
+$font-bold:     700   !default;
+$font-extrabold:     800   !default;

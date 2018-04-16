@@ -1,0 +1,3 @@
+#weather{ display: block; float: left; clear: both; margin: 0; padding: 0 0 0 4px;  height: auto;}
+#weather img{ border: solid 1px #ccc;}
+#weather div { float:left; margin-right:16px;text-align:center;color:#000;}

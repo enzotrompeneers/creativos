@@ -1,0 +1,36 @@
+/*** BARRA COOKIES ***/
+#barraaceptacion {
+    display:none;
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding:10px;
+    width:100%;
+    text-align:left;
+    min-height:40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:#fff;
+    z-index:99999;
+}
+#barraaceptacion p { display:block;float:left; }
+#barraaceptacion img#ok_cookie { display:block;float:left; }
+#barraaceptacion #cookie_left { display:block;float:left;clear:none; width:90%; }
+#barraaceptacion #cookie_right { display:block;float:left;clear:none; width:10%; }
+#barraaceptacion .inner {
+    width:955px;
+    font-family:verdana;
+    font-size:12px;
+    top:30%;
+	margin:0 auto;
+}
+#barraaceptacion .inner a.ok {
+    padding:4px;
+    color:#00ff2e;
+    text-decoration:none;
+}
+#barraaceptacion .inner a.info {
+    text-decoration:none;
+    color:#faff00;
+	font-weight:bold;
+}

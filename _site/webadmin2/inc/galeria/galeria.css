@@ -1,0 +1,101 @@
+﻿/***** ESTILOS GALERIA *****/
+
+form#subirImagenes fieldset,
+form#crearAlbum fieldset,
+#gal fieldset{
+	background-color:#DCE1E5;
+	padding:10px 20px;
+	border: none;
+}
+
+form#crearAlbum,
+form#subirImagenes {
+	width: 590px;
+	margin: 0 0 10px 0;
+	display: block;
+}
+
+form#crearAlbum label,
+form#subirImagenes label{
+	width: 88px;
+	text-align: right;
+}
+
+form#crearAlbum input,
+form#subirImagenes input,
+form#crearAlbum textarea,
+form#subirImagenes textarea{
+	width: 250px;
+}
+form#crearAlbum input.hidden,
+form#subirImagenes input.hidden{
+	border: none;
+}
+
+
+form#selectAlbum{
+	display: block;
+	float: left;
+	clear: both;
+	width: auto;
+	height: auto;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+#gal{
+	display: block;
+	float: left;
+	clear: both;
+	width: 785px;
+	height: auto;
+	margin: 10px 0;
+}
+#gal ul#album {
+	padding:0px;
+	margin: 0px;
+}
+#gal #response {
+	padding:10px;
+	background-color:#9F9;
+	border:2px solid #396;
+	margin-bottom:20px;
+	clear: both;
+}
+#gal ul#album li {
+	display: block;
+	float: left;
+	margin: 0 8px 10px 0;
+	padding:6px;
+	background-color:#333;
+	color:#fff;
+	list-style: none;
+}
+#gal ul#album li img{ cursor:move;}
+#gal ul#album li .clear a:link{ color: #fff;}
+#gal ul#album li .clear a:visited{ color: #fff;}
+#gal ul#album li .clear a:hover{ color: #fff;}
+#gal ul#album li .clear a:active{ color: #fff;}
+
+/***** ESTILOS FOTO GALERÍA *****/
+
+ul#fotogal{
+	display: block;
+	float: left;
+	clear: both;
+	width: 590px;
+	height: auto;
+	margin: 20px 0;
+	padding: 0;
+}
+ul#fotogal li{
+	display: block;
+	float: left;
+	clear: none;
+	width: auto;
+	height: auto;
+	margin: 4px;
+	padding: 4px;
+	background: #fff;
+	border: solid 1px #cfccb9;
+}

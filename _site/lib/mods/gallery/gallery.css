@@ -1,0 +1,35 @@
+#localizaciones #main_image {
+ padding:4px;
+ border: 1px solid #cac6bd;
+ background-color: #f3f1ec;
+}
+a#big_link { min-height:270px;display:block; }
+ul#galeria{
+	float: left;
+	margin: 8px 0 12px 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+
+}
+ul#galeria li{
+	display: block;
+	float: left;
+	clear: none;
+	margin: 6px 4px 6px 0;
+	padding: 0;
+}
+ul#galeria li a{
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0;
+	background-color: #f3f1ec;
+	width: auto;
+	height: auto;
+	border: 1px solid #CAC6BD;
+	width:60px;
+
+}
+ul#galeria li a:hover{ background-color: #aba49e;}
+ #duoCol #main h3 { color:#6d8a20;font-weight:bold; }

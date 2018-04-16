@@ -1,0 +1,84 @@
+div.pagination {
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0 15px 12px 15px;
+	padding: 0;
+	height: 25px;
+	width: 930;
+}
+
+div.pagination a {
+	border: solid 1px #dedede;
+	padding: 2px 4px; 
+	margin: 0 1px 0 0;
+}
+
+div.pagination a:hover, div.pagination a:active {
+color: #3D8DDA; text-decoration: none;
+}
+
+div.pagination a.anterior {
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0;
+	padding: 4px 20px;
+	width: 78px;
+	height: 18px;
+	background: url(images/btnAnterior.jpg) no-repeat 0 0;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+div.pagination a.siguiente {
+	display: block;
+	float: right;
+	clear: none;
+	margin: 0;
+	padding: 4px 20px 4px 10px;
+	width: 88px;
+	height: 18px;
+	background: url(images/btnSiguiente.jpg) no-repeat 0 0;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+div.pagination a.anterior:hover{ background: url(images/btnAnterior.jpg) no-repeat 0 -26px; color: #364859; text-decoration: none;}
+
+div.pagination a.siguiente:hover{ background: url(images/btnSiguiente.jpg) no-repeat 0 -26px; color: #364859; text-decoration: none;}
+
+div.pagination span.pagination_current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #2d73b9;
+  font-weight: bold;
+  background-color: #6ec6f1;
+  color: #fff;
+}
+	
+div.pagination span.pagination_disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #eee;
+  color: #ddd;
+}
+
+.form_pagination {
+  margin-top: 5px;
+}
+/***** Paginación *****/
+
+
+
+
+
+#content #main #paginbar #pages{
+	display: block;
+	float: left;
+	clear: none;
+	margin: 0;
+	padding: 4px 20px;
+	width: 654px;
+	height: 18px;
+	text-align: center;
+}
+

@@ -1,0 +1,40 @@
+.left-off-canvas-menu{
+	#idiomas{
+		list-style-type:none;
+		li{
+			float:left;
+			clear:none;
+			margin:0;
+			padding:0;	
+			
+			a {
+				background: none;
+				margin:0 4px;
+				padding:0 0 3px 0;
+				line-height: 40px; 
+			}
+		}	
+	}
+	.off-canvas-list,
+	#header_menu { 
+		clear: both;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		
+		a{
+			border-bottom: 1px solid #262626;
+			color: rgba(255, 255, 255, 0.7);
+			display: block;
+			padding: 0.66667rem;
+			-webkit-transition: background 300ms ease 0s;
+			-moz-transition: background 300ms ease 0s;
+			-o-transition: background 300ms ease 0s;
+			transition: background 300ms ease 0s;
+		
+			&:hover{
+				background-color: #242424;	
+			}
+		}
+	}
+}

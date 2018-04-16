@@ -1,0 +1,243 @@
+/**** INVI FORM CLASSES ****/
+
+form.invisible{ background: none; margin: 0; padding: 0;}
+fieldset.invisible{ border: none; margin: 0; padding: 0;}
+
+/**** CALENDAR CLASSES ****/
+
+.diaLlegada { background: url(../images/diaLlegada.png) no-repeat bottom right; }
+.diaSalida { background: url(../images/diaSalida.png) no-repeat top left; }
+.diaDoble { background: url(../images/diaDoble.png) no-repeat top left; }
+.diaPasado { background: url(../images/diaPasado.png) no-repeat top left; }
+
+ul#naviCalendar{
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+ul#naviCalendar li{
+	display: block;
+	float: left;
+	clear: none;
+	margin: 0 10px 0 0;
+	padding: 0;
+	list-style: none;
+}
+#cntCalendar {
+	display:block;
+	float: left;
+	clear: both;
+	margin: 0;
+	width:100%;
+}
+#cntCalendar .month {
+	border:1px solid #BFBFBF;
+	display:inline;
+	float:left;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:13px;
+	margin-bottom:1em;
+	margin-right:9px;
+	padding:4px;
+	background-color: #fff;
+}
+#cntCalendar table { border-collapse:separate; }
+#cntCalendar .month tr { overflow:hidden; }
+#cntCalendar .month th.month-label {
+	background-color:#759410;
+	color:#fff;
+	font-weight:bold;
+}
+#cntCalendar .month th, #cntCalendar .month td {
+	line-height:1em;
+	overflow:visible;
+	vertical-align:middle;
+	white-space:nowrap;
+	width:1em;
+}
+#cntCalendar .month th, #cntCalendar .month td {
+	border:0 none;
+	padding:4px;
+	text-align:center;
+	font-size: 11px;
+	width:auto;
+}
+caption, th { text-align:left; }
+#cntCalendar .legend dt.u, #cntCalendar .month td.u {
+	background: url(../images/diaCompleto.png) no-repeat top left;
+	text-decoration:line-through;
+}
+#availability .legend dt.a, .calendars .month td.a {
+	background-color:#FFFFFF;
+}
+#cntCalendar .month td.e {
+	visibility:hidden !important;
+}
+
+/**** RATES CLASSES ****/
+table#rates{
+	display: block;
+	float: left;
+	clear: both;
+	margin: 10px 0 20px 0;
+	padding: 0;
+	width: 450px;
+	border-collapse: collapse;
+}
+table#rates th{ border: solid 1px #E4DECD; text-align: center; }
+table#rates tr td{ border: solid 1px #E4DECD; text-align: center; background: #EEE8D8; }
+
+table#rates tr th.period{ width: 130px;}
+table#rates tr th.begin{ width: 90px;}
+table#rates tr th.end{ width: 90px;}
+table#rates tr th.price{ width: 110px;}
+
+
+table#ratesExtra{
+	display: block;
+	float: right;
+	clear: right;
+	margin: 10px 0 0 20px;
+	width: 450px;
+	border-collapse: collapse;
+}
+table#ratesExtra tr td{ border: solid 1px #E4DECD; text-align: left; padding-left: 10px; background: #EEE8D8; width: 248px; }
+table#ratesExtra tr td.head{ border: solid 1px #E4DECD; background-color:#fff; text-align: right; padding-right: 10px; font-weight: bold; width:160px; }
+table#ratesExtra tr td small{ color: #cc0000; font-weight: bold;}
+
+table#reservationTable{
+	margin: 10px 0 0 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+table#reservationTable tr td{ border: solid 1px #cfcfcf; background: #F7F7F2; text-align: left; padding: 6px 0 6px 10px;font-size: 12px; width: 410px; color: #313233; }
+table#reservationTable tr td.head{ background: #dfdede; border: solid 1px #cfcfcf; text-align: right; padding-right: 10px; font-weight: bold; font-size: 13px; width: 180px; }
+table#reservationTable tr td.head small{ color: #CC0000;}
+table#reservationTable tr td .required{ color: #cc0000; font-weight: bold; margin-left: 2px;}
+table#reservationTable tr td input.chk{ width: 15px; margin: 0 8px 0 0;}
+
+table#reservationTable tr td label{ display: block; float: left; clear: left; width: 150px; text-align: left; padding: 3px 0; }
+table#reservationTable tr td input,
+table#reservationTable tr td select,
+table#reservationTable tr td textarea{ display: block; float: left; clear: none; margin: 0 0 0 10px; width: 200px; color: #333;}
+
+table#reservationTable tr td input{ padding: 0 2px; width: 196px; }
+table#reservationTable tr td select{ padding: 1px; height:auto; width: 204px;}
+
+table#reservationTable tr td input.corto{ width: 28px; text-align:center;}
+table#reservationTable tr td select.corto{ width: 46px;margin:0 4px; text-align:left; float: none; display: inline;}
+
+p.step{ font-weight: bold; font-style: italic; margin: 0 0 4px; padding: 0;}
+div.paso{ display: block; float:left; clear: both; width: 100%;}
+
+table#reservationTable tr td input#fechaVueltaMiniCal, 
+table#reservationTable tr td input#fechaIdaMiniCal{
+	background: url(images/ico_calendar.gif) no-repeat top left;
+	border: 0;
+	outline: none;
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+	cursor: pointer;
+	margin: 2px 2px 0 2px;
+}
+table#reservationTable tr td .traveler { 
+	display:none; 
+}
+table#reservationTable tr td .priceLeft{ display: block; float: left; margin: 0 0 0 5px;}
+table#reservationTable tr td.priceTotal{ background-color: #759410; color: #fff; padding: 8px 0 8px 10px;}
+
+#paso1{ margin: 25px 0;}
+#paso2, #paso3{ width: 100%; margin: 10px 0 20px 0;}
+#paso2 .intro{ padding: 12px; margin: 0; float: left;}
+#paso2 .intro p{ margin: 0;}
+
+#paso2 fieldset,
+#paso3 fieldset{
+	clear: both;
+	border: 1px solid #cfcfcf;
+	background-color:#DFDEDE;
+	margin: 0;
+}
+
+textarea#disclaimer{
+	display: block;
+	float: none;
+	clear: both;
+	width: 500px;
+	height: 80px;
+}
+div#disclaimer{
+	display: block;
+	float: none;
+	clear: both;
+	width: 93%;
+	height: 100px;
+	overflow: auto;
+	border: solid 1px #ddd;
+	padding: 10px;
+	margin: 10px;
+	background-color: #fff;
+}
+
+.mOk{
+	background-color: #DFF0D8;
+	color: #468847;
+}
+.mError{
+	background-color: #F2DEDE;
+	color: #B94A48;
+}
+.floatLeft{ float: left;}
+
+.agreeCond{ width: 40%;}
+.agreeCond input{ float: left; width: 15px; margin: 0 8px 0;}
+.agreeCond b{ float: left; font-size: 1.15em; color: #900; padding: 2px 0 0 0;}
+
+#sendReservation{
+	float: right;
+	margin: 0 35px 20px 0;
+	padding: 4px 20px;	
+	height: 26px;
+	border: none;
+	font-size: 13px;
+}
+
+.traveler:first-child{ margin-top: 10px;}
+.traveler{
+	display: block;
+	float: left;
+	clear: both;
+	width: 94%;
+	height: auto;
+	background-color: #f1f1e8;
+	margin: 0 0 5px 0;
+	padding: 8px;
+}
+.traveler .left{
+	width: 48%;
+	height: auto;
+	float: left;
+	clear: both;
+}
+.traveler .right{
+	width: 48%;
+	height: auto;
+	float: right;
+	clear: none;
+}
+table#reservationTable tr td .traveler label{ width: 100%; padding: 0; margin: 0 0 2px 0;}
+table#reservationTable tr td .traveler input[type=text]{ width: 96%; padding: 0; margin: 0 0 2px 0;}
+table#reservationTable tr td .traveler textarea{ width: 96%; padding: 0; margin: 0;}
+table#reservationTable tr td .traveler label em{ float: left; width: auto; margin: 0 10px 0 0; font-style: normal;}
+table#reservationTable tr td .traveler label span{ float: left; width: 40px;}
+table#reservationTable tr td .traveler label span input{ width: auto; max-width: 15px; margin: 0 5px 0 0;}
+
+#paso3 input.image{
+	width: auto;
+	float: left;
+	border: none;
+}

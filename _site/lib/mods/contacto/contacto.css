@@ -1,0 +1,167 @@
+/***** Contacto Classes ****/
+
+form#contactoForm{
+	display: block;
+	float: left;
+	clear: none;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+
+form#contactoForm #sideDetails{
+	display: block;
+	float: left;
+	clear: both;
+	width: 180px;
+	height: auto;
+	padding: 20px;
+	margin: 4px 30px 0 0;	
+	border-radius: 6px;
+	-ms-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	background-color: #f4f4f4;
+}
+body.interna #content #main form#contactoForm #sideDetails p{ 
+	width: 100%;
+	margin: 0 0 14px 0;
+}
+
+form#contactoForm fieldset{
+	border: none;
+	padding: 0;
+	display: block;
+	float: left;
+	clear: none;
+}
+form#contactoForm fieldset #frmLeft,
+form#contactoForm fieldset #frmRight{
+	display: block;
+	float: left;
+	clear: none;
+	margin: 0 0 4px 0;
+	padding: 0;
+	width: 214px;
+	height: auto;
+}
+form#contactoForm fieldset #frmLeft{ border-right: dotted 1px #d6d4d2;}
+form#contactoForm fieldset #frmRight{ margin-left: 20px;}
+
+form#contactoForm fieldset span.input{
+	display: block;
+	float: left;
+	clear: both;
+	margin: 1px 0;
+	padding: 1px;
+	background:#ccc;
+}
+form#contactoForm fieldset span.selected{
+ background-color:#ccc;
+}
+form#contactoForm fieldset label{
+	display: block;
+	float: left;
+	clear: both;
+	margin:2px 0 6px 0;
+}
+form#contactoForm fieldset input{
+	display: block;
+	float: left;
+	clear: both;
+	width:200px !important;
+
+}
+form#contactoForm fieldset #btnEnviar {
+	margin:12px 0 0 0;
+}
+form#contactoForm fieldset input.invalid{ background-color: #faa;}
+form#contactoForm fieldset input.valid{ background-color: #afa;}
+
+form#contactoForm fieldset select{
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0 0 6px 0;
+	padding: 2px;
+	width: 60px;
+	border: solid 1px #aaa;
+}
+form#contactoForm fieldset .buttons{
+	display: block;
+	float: left;
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+form#contactoForm fieldset input.enquiry{
+	display: block;
+	float: right;
+	clear: both;
+	margin: 8px 22px 0 0;
+	width: 100px;
+	background-color: #336699;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.1em;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 6px;
+	-ms-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	text-shadow: #333 1px 1px 1px;
+	outline: none;		
+} 
+form#contactoForm fieldset .obli{ font-size: 0.75em; width: 425px;}
+form#contactoForm fieldset textarea{
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0;
+	padding: 5px;
+	width: 433px;
+	height: 80px;
+	border: solid 1px #ccc;	
+}
+
+#content .mOk{
+	float: left;
+	width: 420px;
+	height: auto;
+	margin: 0 0 10px 0;
+	padding: 8px 20px;
+	border: solid 1px #84c371;
+	background: #b3eca1;
+}
+#content .mError{
+	float: left;
+	width: 420px;
+	height: auto;
+	margin: 0 0 10px 0;
+	padding: 8px 20px;
+	border: solid 1px #e67873;
+	background: #f19692;
+}
+form#contactoForm .selected {
+ border:1px solid #ccc;
+}
+
+/***** Minimal version *****/
+form#contactoForm fieldset#minimal  span.input{
+	clear: none;
+}
+form#contactoForm fieldset#minimal input { width:206px; }
+form#contactoForm fieldset#minimal label { width:100px; }
+
+form#contactoForm fieldset#minimal textarea { width:220px;height:60px; }
+
+form#contactoForm fieldset#minimal .buttons input { margin:0;padding:0; }
+form#contactoForm fieldset#minimal input.submit { float:left; }

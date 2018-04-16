@@ -1,0 +1,16 @@
+#login label, 
+#login input{
+	display: block;
+	float: left;
+}
+#login label{ 
+	width: 110px;
+	text-align:right;
+	clear: left;
+}
+#login input, 
+#login textarea{ 
+	margin: 0 0 6px 10px;
+	width: 160px;
+	border: solid 1px #a7a6aa;
+}

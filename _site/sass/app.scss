@@ -1,0 +1,213 @@
+/*** Global variables ***/
+
+@import 'bourbon'; // http://bourbon.io/
+@import 'partials/variables'; // colors, fonts etc...
+@import 'partials/mixins'; // custom mixins
+@import 'partials/layout'; // responsive grid and media queries
+@import 'partials/leftmenu'; // Left mobile menu
+ 
+/*** Mod partials ***/
+
+@import 'mods/noticias'; // News mod
+@import 'mods/login'; // Login mod
+@import "mods/_cookies"; // Cookies bar
+
+/** Global styles **/
+body{
+  
+}
+.row { max-width: 1180px; }
+fieldset { border:none; margin:0;padding-top:0;padding-bottom:0; }
+.no-margin { margin:0; } 
+textarea { min-height:100px; }
+
+/** Header styles **/
+
+nav.top-bar { 
+	max-width:100%;  
+	background:#fff;
+	height:120px;
+	border-bottom:1px dotted #ccc;
+	padding:14px 0;
+	.top-bar-section{
+		background:#fff;
+	}
+	.name{
+		h1 {
+			a{
+			color:$color-1;
+			font-weight:700;
+			font-size:1em;
+			text-transform:uppercase;
+
+			}
+		} 
+	}
+	section {
+		ul#header_menu {
+			li{
+				a {
+					background:#fff;
+					color:#222;
+					font-size:1.0em;
+					border-bottom:1px solid #fff;
+				}
+				a:hover{
+					color:#000;
+					border-bottom:1px dotted $color-2;
+				}
+				a.active {
+					font-weight:700;
+				}
+			}
+		}
+	}
+}
+ul#idiomas {
+	list-style-type:none;
+	float:right;
+	clear:none;
+		li{
+			list-style-type:none;
+			float:left;
+			clear:none;
+			margin:0;
+			padding:0;
+			a {
+				margin:0 0 0 4px;
+				padding:0;
+			}
+		}
+	}
+.panoramicas {
+	position:relative;
+	height: 220px;
+	width:100%;
+	.pano{
+		height: 220px;
+		z-index:1;
+	    position: absolute;
+		left:0;
+		width:100%;
+
+	}
+	.pano.active { display:block;z-index:3;}
+	.pano.last-active {  }
+}	
+/*** INTERNAL PAGES ***/
+
+.top {
+	margin-top:32px;
+}
+#map_canvas {
+	width:100%;
+	height:300px;	
+	h3 {
+		font-size:1.4em;
+	}
+}
+
+/*** BUSCADOR DE VIVIENDAS ***/
+#buscadorToggle {
+	background:#ccc;
+	padding:6px;
+	width:100%;
+	display:block;
+}
+#buscador {
+	background:#eee;
+	padding:12px 12px 6px 12px;
+	margin:0 0 12px 0;
+	select	{ width:50%;float:left;clear:none;margin-bottom:6px; }
+	input	{ width:50%;float:left;clear:none;margin-right:0 !important;  }
+	label	{ width:50%;float:left;clear:none; }
+	input#reset{
+		@include rounded();
+		@include buscador-button(#333);
+	}
+	input#submit{
+		@include rounded();
+		@include buscador-button($color-1);
+		text-transform: uppercase;
+		margin-top:8px;
+	}
+}
+
+/*** VIVIENDAS ***/
+
+ul.listadoViviendas {
+	li {
+		div.int { border:1px solid #ccc;padding:8px; }
+	}
+	a{
+		.imgHolder {
+			height:140px;
+			width:100%;
+			overflow:hidden;
+			img {
+				min-height:140px;
+			}
+		}
+	}
+	p { padding:0;margin:0; }
+}
+
+/*** FICHA VIVIENDAS ***/
+
+#viviendas #map_canvas {
+	width:100%;
+	height:400px;
+	border:1px solid #ccc;
+}
+
+/* Form stuff */
+label.small {
+	width: 140px;
+	margin-left: 12px;
+	float: left;
+}
+select.small {
+	width: 75px;
+	margin-left: 12px;
+	float: left;
+}
+
+.footer {
+	background:$color-2;
+	min-height:20px;
+	margin-top:32px;
+	.footer_left {
+		padding-top:6px;
+		height:60px;
+
+	}
+	.footer_right {
+		min-height:20px;
+		height:100%;
+		padding-top:20px;
+		ul {
+			li {
+				border-right: 1px solid #ccc;
+				margin-left: 0.7rem;
+				padding-right: 0.7rem;
+				a {
+					font-size:.8em;
+					color:#272727;
+				}
+			}
+			li:last-child { border:none; }
+		} 
+	}
+}
+
+/*** MEDIA QUERIES! ***/
+
+@media only screen and (max-width: 40em) { /* small */
+	#header_menu li a:hover { background:#eee !important; }
+}
+@media only screen and (min-width: 40.063em) { /* medium */
+
+}
+@media only screen and (min-width: 64.063em) { /* large */
+
+}

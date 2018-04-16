@@ -1,0 +1,83 @@
+@import
+  "_variables";
+
+
+/* TRANSITION */
+// -------------------------- -------------------------- -------------------------- -------------------------- 
+ 
+ @mixin transition($transition-property, $transition-time, $method) {  //@include transition(all, 0.3s, ease-in-out);
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin transform-scale($x:1, $y:1){ //@include transform-scale(1,1);
+    -webkit-transform: scale($x, $y);
+    -moz-transform   : scale($x, $y);
+    -o-transform     : scale($x, $y);
+    -ms-transform    : scale($x, $y);
+    transform        : scale($x, $y);
+}
+@mixin transform-translate($val){ //@include transform-translate(-50%);
+    -webkit-transform: translateY($val);
+    -moz-transform   : translateY($val);
+    -o-transform     :translateY($val);
+    -ms-transform    :translateY($val);
+    transform        : translateY($val);
+}
+@mixin transform-translatex($val){ //@include transform-translatex(-50%);
+    -webkit-transform: translateX($val);
+    -moz-transform   : translateX($val);
+    -o-transform     :translateX($val);
+    -ms-transform    :translateX($val);
+    transform        : translateX($val);
+}
+@mixin transform-rotate($val){
+    @if($val != null){
+        -webkit-transform: rotate($val + deg) ;
+        -moz-transform   : rotate($val + deg) ;
+        -o-transform     : rotate($val + deg) ;
+        -ms-transform    : rotate($val + deg) ;
+        transform        : rotate($val + deg) ;
+    }
+}
+@mixin transform-origin($val) {
+  -webkit-transform-origin: $val;
+  -moz-transform-origin: $val;
+  -ms-transform-origin: $val;
+  transform-origin: $val;
+}
+/* BORDER RADIUS */
+// -------------------------- -------------------------- -------------------------- -------------------------- 
+
+//@include border-radius(3px);
+
+@mixin border-radius($radius) {
+    -moz-border-radius:    $radius;
+    -webkit-border-radius: $radius;
+    border-radius:         $radius;
+}
+
+ 
+
+// --gradient---------------------------------
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+@mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Opera 12
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
+}

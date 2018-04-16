@@ -1,0 +1,127 @@
+/* here you can put your own css to customize and override the theme */
+
+.rojo { color:#d84a38 !important; } 
+.azul { color:#4b8df8 !important; } 
+
+.logo-default { margin:4px 0 0 0 !important; }
+.sidebar-toggler { margin:8px !important; }
+.form-buttons { margin-bottom:18px !important; }
+.add-value { margin-left:12px; }
+.tipos .caption i { font-size:21px !important;margin-top:4px !important;margin-right:12px !important; }
+#map_canvas { width:100%;height:500px; }
+.glyphicon-ok { color:#35aa47; }
+.glyphicon-remove { color:#d84a38; }
+.page-sidebar-menu i { color:#d84a38 !important; }
+.right { float:right; }
+#myTable { padding:12px; }
+
+.modal-dialog { width:640px !important; }
+/****** BEGIN RAG 'N' DROP******/
+
+#gal {
+	clear:both;
+	display:block;
+	float:left;
+	height:auto;
+	margin:10px 0;
+	width:100%;
+}
+#gal ul#album {
+	margin:0;
+	padding:0;
+}
+#gal ul#album li {
+	background-color:#eee;
+	color:#111;
+	display:block;
+	float:left;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0 10px 10px 0;
+	padding:8px;
+	height:184px;
+}
+#gal ul#album li img{ max-width: 180px; max-height: 120px;margin:6px 0; }
+#gal ul#album li p{ margin:0;text-align:center;font-size:11px; }
+
+ul#languages {
+	list-style-type:none;
+	padding:0;
+	margin:2rem 0 0 1.8rem;
+}
+
+ul#languages li {
+	float:left;
+	margin:0 2px 4px 0;
+	padding:0;
+}
+ul#languages li img.inactive { 
+	opacity: 0.6;
+}
+ul#languages li img.active { 
+	opacity: 1;
+}
+#queue { float:left; clear both; }
+
+
+a.cvs {
+	background: #008641;
+	padding:4px 8px;
+	color:#fff;
+	margin-top: 2rem;
+	float:left;
+}
+
+.vertical_flip {
+	-moz-transform: scale(1, -1);
+	-webkit-transform: scale(1, -1);
+	-o-transform: scale(1, -1);
+	-ms-transform: scale(1, -1);
+	transform: scale(1, -1);
+}
+
+#orden {
+	padding: 2rem 2rem 4rem 2rem;
+}
+#orden h3 {
+	margin-top: 0 !important;
+	margin-bottom: 1rem !important;
+}
+
+#orden .dd-handle{
+	width: 70% !important;
+}
+
+/* Traducciones */
+.lista-traducciones {
+	height:420px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 4px 0;
+}
+.lista-traducciones li.list-group-item { padding: 0; }
+.lista-traducciones li a {
+	width:100%;
+	height:100%;
+	display:block;
+	color:#111;
+	padding: 10px 15px;
+}
+.lista-traducciones li a:hover {
+	text-decoration: none;
+	background: #fafafa;
+}
+.lista-traducciones li a.active {
+	text-decoration: none;
+	background: #eee;
+}
+.flag {
+	float:right;
+	margin-left:2px;
+}
+.flag.no_translation {
+	opacity:.2;
+}
+
+.minicolors-theme-default .minicolors-input { height: auto !important; } 

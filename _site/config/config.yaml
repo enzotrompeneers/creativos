@@ -1,0 +1,44 @@
+base_site:
+db:
+  mode: development
+  xname: becreativos
+  mysql:
+    development:
+      hostname: localhost
+      database: creativo_webdb
+      username: root
+      password: root
+    staging:
+      hostname: localhost
+      database: creativo_webdb
+      username: root
+      password: root
+    production:
+      hostname: localhost
+      database: creativo_webdb
+      username: becreativos_webusr
+      password: michke1242
+locales:
+ - en
+ - nl
+default_locale: es
+locales_admin:
+ - en
+ - nl
+mail:
+  host: mail.creativos.be
+  port: 25
+  user: relay@creativos.be
+  pass: vivero2008
+images:
+  s: 120
+  m: 360
+  l: 840
+  g: 1920
+  panoWidth: 1920
+  panoHeight: 640
+test: true
+alquileres: false
+recaptcha:
+  public: 6Lcw8j8UAAAAAOVSHdr7HAd9D7o2P03OTdltQj0o
+  secret: 6Lcw8j8UAAAAANZWn6hnPdMiMv10WuDu7tUCm6xh

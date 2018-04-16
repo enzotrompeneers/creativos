@@ -1,0 +1,29 @@
+/*** BARRA COOKIES ***/
+#barraaceptacion {
+    display:none;
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding:10px;
+    width:100%;
+    text-align:left;
+    min-height:40px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color:#fff;
+    z-index:99999;
+}
+#barraaceptacion p { display:block;float:left; }
+#barraaceptacion img#ok_cookie { display:block;float:left; }
+#barraaceptacion a.ok {
+    padding:4px;
+    color:#febf27;
+    text-decoration:none;
+	float:right;
+}
+#barraaceptacion a.info {
+    text-decoration:underline;
+    color:#febf27;
+	font-weight:bold;
+}
+#barraaceptacion .int { width:90%; }
